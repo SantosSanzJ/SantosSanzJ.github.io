@@ -439,12 +439,15 @@ body {
     bottom: calc(var(--pad)*2);
     white-space: nowrap
 }
-
+.home_educacion,
 .home_aboutme {
     line-height: 1.5;
     margin: 100;
 }
-
+.home_educacion{
+    
+}
+.home_educacion span,
 .home_aboutme span {
     display: block
 }
@@ -479,6 +482,8 @@ body {
     align-items: flex-end;
     row-gap: 15px
 }
+.page_content_inicio,
+.page_content_proyectos,
 .page_content_habilidades,
 .page_content {
     /*Contenido de la pagina*/
@@ -495,9 +500,15 @@ body {
     font-family: 'Lora', monospace;
     text-align: right;
 }
+.page_content_proyectos{
+    overflow-y: auto;
+
+}
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
+    .page_content_habilidades,
+    .page_content_proyectos,
     .page_content {
         max-width: 60%;
         /* Adjust for smaller screens */
@@ -509,9 +520,17 @@ body {
     font-size: 6vw;
     text-align: right
 }
+.project_info{
+
+}
 
 .skills-table{
     display: block;
+}
+.page_content_habilidades{
+    right: 20%;
+    top:0%;
+    
 }
 
 @media(min-width: 1280px) {
@@ -542,8 +561,8 @@ body {
     }
     .page_content_habilidades{
         overflow-y: auto;
-    }
-    
+        right: 5%;
+    } 
 }
 
 .skills_info {
@@ -552,11 +571,7 @@ body {
 
     
 }
-.page_content_habilidades{
-    right: 20%;
-    top:-5%;
-    
-}
+
 
 @media(min-width: 1280px) {
     .skills_info {
