@@ -74,7 +74,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 1.6svw;
     font-weight: 600;
 }
 
@@ -125,6 +125,7 @@ body {
     display: flex;
     overflow: hidden;
     min-height: 100vh;
+    min-width: 200vw;
     background: #000;
 }
 
@@ -326,7 +327,7 @@ body {
     /*Titulo*/
     margin: -0.1em 0 0 -0.04em;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 4.6vw;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -340,7 +341,7 @@ body {
     /*Subtitulo*/
     margin-top: 5px;
     font-weight: 400;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     font-family: 'Playfair Display', serif;
 
 }
@@ -384,7 +385,7 @@ body {
     left: -6%;
     font-family: 'Lora', monospace;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .siteHeader_nav ol li ._text::before {
@@ -505,7 +506,7 @@ body {
     text-align: right;
 }
 .page_content_proyectos{
-    overflow-y: auto;
+    overflow-y: none;
 
 }
 
@@ -682,7 +683,7 @@ td {
 
 td:before {
     content: attr(data-title);
-    color: #7a91aa;
+    color: #0000;
     text-transform: uppercase;
     font-size: 1.4rem;
     padding-right: 10px;
@@ -699,9 +700,13 @@ th {
 }
 
 thead th {
-    background-color: #202932;
+    background-color: #000;
     color: #fff;
     border: 1px solid #202932;
+}
+
+thead th:nth-child(even) {
+    background-color: #202932;
 }
 
 tfoot th {
@@ -799,7 +804,7 @@ dd {
         padding: 10px;
     }
 
-    tr:nth-child(2n+2) td {
+    td:nth-child(2n+2) {
         background-color: #242e39;
     }
 
