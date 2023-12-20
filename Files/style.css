@@ -449,9 +449,7 @@ body {
     line-height: 1.5;
     margin: 100
 }
-.home_educacion{
-    
-}
+
 .home_educacion span,
 .home_aboutme span {
     display: block
@@ -524,9 +522,9 @@ body {
     font-weight: 200;
     text-align: right
 }
-.project_info{
+/*.project_info{
 
-}
+}*/
 
 .skills-table{
     display: block;
